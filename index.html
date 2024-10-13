@@ -4,44 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Inclusive</title>
-    <link rel="stylesheet" href="style.css">
-
-     <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-
-   <!-- Bootstrap Icons -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="Css/style.css">
 </head>
-<body>
-    <div class="menu-container">
+<body class="light-mode">
 
-        <div class="header-logo">
-            <a href="#home">
-                <img src="img/" alt="" class="logo">
-                <img src="img/logo2.png" alt="" class="logo2">
+    <!-- Header com Menu e Logo -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href="">
+                    <img src="img/All Inclusive.png" alt="Logo" class="logo">
+                </a>
 
-            </a>
-        </div> <!-- Fim Logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                        <li class="nav-item"><button class="btn btn-primary login-btn">Login</button></li>
+                    </ul>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
-        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Inicial com Slider de Imagens -->
+<section id="banner" class="d-flex align-items-center banner-section">
+    <div class="container text-center">
+        <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site</h1>
+        
+      
+<p class="animate__animated animate__fadeInUp">Explore nosso mundo de inovações e soluções criativas.</p>
+        <a href="#about" class="btn btn-outline-light mt-4">Saiba Mais</a>
     </div>
-    <nav class="navbar" id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contatos">Contatos</a></li>
-        </ul>
-    </nav>
+</section>
 
-    
-    
 
+    <!-- Seção Sobre -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/img3.jpg" class="img-fluid rounded shadow-lg" alt="Sobre">
+                </div>
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p>Na All Inclusive, pensamos no poder da diversidade. Conectamos pessoas de diferentes origens, gêneros, raças e habilidades com empresas que valorizam a inclusão.</p>
+                    <p>Cada talento é único, e nosso compromisso é construir pontes que promovam ambientes justos e acolhedores. Juntos, criamos um futuro onde respeito, empatia e igualdade guiam todas as oportunidades. </p>
+                    <a href="#services" class="btn btn-primary mt-4">Nossos Serviços</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code service-icon mb-3"></i>
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Criação de sites responsivos e personalizados.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-mobile-alt service-icon mb-3"></i>
+                    <h4>Aplicativos Mobile</h4>
+                    <p>Desenvolvimento de aplicativos nativos e híbridos.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cloud service-icon mb-3"></i>
+                    <h4>Soluções em Nuvem</h4>
+                    <p>Armazenamento seguro e escalável para suas necessidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="portfolio py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Nosso Portfólio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/img5.jpg" class="img-fluid" alt="Projeto 1">
+                        <div class="overlay">
+                            <h3>Projeto 1</h3>
+                            <p>Descrição do projeto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/img2.jpg" class="img-fluid" alt="Projeto 2">
+                        <div class="overlay">
+                            <h3>Projeto 2</h3>
+                            <p>Descrição do projeto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="img/img4.jpg" class="img-fluid" alt="Projeto 3">
+                        <div class="overlay">
+                            <h3>Projeto 3</h3>
+                            <p>Descrição do projeto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Testemunhos -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Excelente trabalho, superou nossas expectativas!"</p>
+                        <h5>Cliente 1</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Profissionais de altíssima qualidade e atendimento excepcional."</p>
+                        <h5>Cliente 2</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Serviço rápido e eficiente. Recomendo a todos!"</p>
+                        <h5>Cliente 3</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Fale Conosco</h2>
+                    <p>Entre em contato para saber mais sobre nossos serviços e como podemos ajudar você a alcançar seus objetivos.</p>
+                    <form>
+                        <input type="text" class="form-control mb-3" placeholder="Seu Nome">
+                        <input type="email" class="form-control mb-3" placeholder="Seu E-mail">
+                        <textarea class="form-control mb-3" placeholder="Sua Mensagem"></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Endereço</h2>
+                    <p>Rua Exemplo, 123 - Cidade, Estado</p>
+                    <h2>Telefone</h2>
+                    <p>(99) 99999-9999</p>
+                    <h2>E-mail</h2>
+                    <p>contato@exemplo.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>© 2024 All Inclusive - Todos os Direitos Reservados</p>
+            <div class="social-icons">
+                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                
+ 
+    <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <link rel="stylesheet" href="Js/script.js">
+
 </body>
 </html>
