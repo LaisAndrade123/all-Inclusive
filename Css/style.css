@@ -302,6 +302,51 @@ footer .social-icons a:hover {
     color: #1590fc;
 }
 
+/* Estilizando apenas a seção de criação de conta */
+.create-account-section .login-container {
+    background-color: white;
+    padding: 130px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    text-align: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.create-account-section h2 {
+    margin-bottom: 20px;
+}
+
+.create-account-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-account-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c9ded;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-account-section button:hover {
+    background-color: #4889db;
+}
+
+.create-account-section #message {
+    margin-top: 10px;
+    color: red;
+}
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     #about img {
