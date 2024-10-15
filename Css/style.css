@@ -1,3 +1,41 @@
+/* Variaveis das Cores */
+/* TEMA DARK */
+:root, :root[data-theme='dark'] {
+    --primary-color: #f0f0f0;  /*cor principal Textos*/
+    --primary-bg-color: #121316;  /*cor principal Fundo*/ 
+    /* bg = background == cor do Fundo */
+    --secondary-bg-color: #27282e;  
+    --primary-border-color: #28292E;
+    --secondary-border-color: #e4e4e4;
+    --title-color: #F0F0F0;
+    
+    --link-color: #8f8f8f;
+    --link-hover: #F0F0F0;
+
+    --icon-color: #C7C8C9;
+}
+
+/* TEMA LIGHT */
+:root[data-theme='light'] {
+    --primary-color: #0d0d12; /* cor principal textos */
+
+    --primary-bg-color: #f0f2f5;
+    --secondary-bg-color: #C7C8C9;
+
+    --primary-border-color: #C7C8C9;
+	--secondary-border-color: #99999e;
+
+	--title-color: #0B0B0F;
+	--link-hover: #a3a2a2;
+	--link-color: #0B0B0F;
+	--icon-color: #56575A;
+}
+
+.header-toggle { 
+    min-width: 30%;
+
+}
+
 /* Reset básico */
 * {
     margin: 0;
@@ -32,7 +70,7 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-    color: #0dcaf0 !important;
+    color: #00abce !important;
 }
 
 .login-btn {
@@ -139,7 +177,7 @@ nav .nav-link:hover {
 #services h2 {
     font-size: 36px;
     margin-bottom: 50px;
-    color: #17a2be;
+    color: #118fa8;
 }
 
 .service-icon {
@@ -257,7 +295,7 @@ nav .nav-link:hover {
 }
 
 #contact button {
-    background-color: #0dcaf0;
+    background-color: #00a6c7;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -315,7 +353,7 @@ footer .social-icons a:hover {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #747474;
     border-radius: 5px;
 }
 
@@ -325,7 +363,7 @@ footer .social-icons a:hover {
     background-color: #5c9ded;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     cursor: pointer;
 }
@@ -336,8 +374,9 @@ footer .social-icons a:hover {
 
 .create-account-section #message {
     margin-top: 10px;
-    color: red;
+    color: rgb(168, 168, 168);
 }
+
 
 
 
