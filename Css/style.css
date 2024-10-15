@@ -43,7 +43,7 @@ nav .nav-link:hover {
 }
 
 .login-btn:hover {
-    background-color: #0bb0d0;
+    background-color: #007ed7;
 }
 
 /* Banner */
@@ -93,16 +93,10 @@ nav .nav-link:hover {
 }
 
 #banner a:hover {
-    background-color: #fff;
+    background-color: #6f8d9b;
     color: #000;
 }
 
-/* Banner Section */
-
-.banner-section h1,
-.banner-section p {
-    color: #ffffff; /* Garante que todos os textos dentro do banner fiquem brancos */
-}
 
 
 /* Animação para fade-in */
@@ -111,7 +105,7 @@ nav .nav-link:hover {
         opacity: 0;
     }
     to {
-        opacity: 1;
+        opacity: 3;
     }
 }
 
@@ -156,7 +150,7 @@ nav .nav-link:hover {
 
 #services p {
     font-size: 1rem;
-    color: #004ca9;
+    color: #005fd2;
 }
 
 /* Seção Portfólio */
@@ -207,7 +201,7 @@ nav .nav-link:hover {
     opacity: 1;
 }
 
-/* Testemunhos */
+/* Comentarios */
 #testimonials {
     padding: 100px 0;
     background-color: #fff;
@@ -272,7 +266,7 @@ nav .nav-link:hover {
 }
 
 #contact button:hover {
-    background-color: #0a5e6d;
+    background-color: #01a3c0;
 }
 
 /* Rodapé */
@@ -337,7 +331,7 @@ footer .social-icons a:hover {
 }
 
 .create-account-section button:hover {
-    background-color: #4889db;
+    background-color: #0061d7;
 }
 
 .create-account-section #message {
@@ -345,22 +339,6 @@ footer .social-icons a:hover {
     color: red;
 }
 
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-    #about img {
-        margin-bottom: 20px;
-    }
-
-    #banner h1 {
-        font-size: 2.5rem;
-    }
-
-    #banner p {
-        font-size: 1.2rem;
-    }
-}
 
 
 
