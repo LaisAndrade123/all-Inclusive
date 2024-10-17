@@ -35,8 +35,15 @@
     min-width: 30%;
 
 }
+#toggleTheme {
+    font-size: 1.5rem; 
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+    float: right;
+    position: relative;
+}
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -147,7 +154,7 @@ nav .nav-link:hover {
     }
 }
 
-/* Seção Sobre */
+/* Sobre */
 #about {
     padding: 100px 0;
     background-color: #fff;
@@ -169,7 +176,7 @@ nav .nav-link:hover {
     margin-bottom: 20px;
 }
 
-/* Seção Serviços */
+/* Serviços */
 #services {
     padding: 100px 0;
 }
@@ -191,7 +198,7 @@ nav .nav-link:hover {
     color: #005fd2;
 }
 
-/* Seção Portfólio */
+/* Portfólio */
 #portfolio {
     padding: 100px 0;
     background-color: #f8f9fa;
@@ -270,7 +277,7 @@ nav .nav-link:hover {
     font-weight: 700;
 }
 
-/* Seção Contato */
+/* Contato */
 #contact {
     padding: 100px 0;
     background-color: #f8f9fa;
@@ -334,7 +341,7 @@ footer .social-icons a:hover {
     color: #1590fc;
 }
 
-/* Estilizando apenas a seção de criação de conta */
+/* login */
 .create-account-section .login-container {
     background-color: white;
     padding: 130px;

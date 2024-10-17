@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="Css/style.css">
 
 </head>
+
 <body class="light-mode">
 
     <!-- Header com Menu e Logo -->
@@ -29,7 +31,8 @@
                     <img src="img/All Inclusive.png" alt="Logo" class="logo">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -43,26 +46,33 @@
                         <li class="nav-item"><button class="btn btn-primary login-btn">Login</button></li>
                     </ul>
                 </div>
+                <div class="header-toggle">
+                    <i id="toggleTheme" class="bi bi-sun"> </i>
+                </div>
             </div>
+            
         </nav>
+
+        
+        <!-- Icon -->
+
+        
     </header>
 
-    <div class="header-toggle">
-        <i id="toggleTheme" class="bi bi-sun"> </i>
-    </div>
-
-    <!-- Banner Inicial com Slider de Imagens -->
-<section id="banner" class="d-flex align-items-center banner-section">
-    <div class="container text-center">
-        <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site</h1>
-           
-        <p class="animate__animated animate__fadeInUp">Explore nosso mundo de inovações e soluções criativas.</p>
-        <a href="#about" class="btn btn-outline-light mt-4">Saiba Mais</a>
-    </div>
-</section>
 
 
-    <!-- Seção Sobre -->
+    <!-- Banner -->
+    <section id="banner" class="d-flex align-items-center banner-section">
+        <div class="container text-center">
+            <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site</h1>
+
+            <p class="animate__animated animate__fadeInUp">Explore nosso mundo de inovações e soluções criativas.</p>
+            <a href="#about" class="btn btn-outline-light mt-4">Saiba Mais</a>
+        </div>
+    </section>
+
+
+    <!-- Sobre -->
     <section id="about" class="py-5">
         <div class="container">
             <div class="row">
@@ -71,20 +81,23 @@
                     <img src="img/img3.jpg" class="img-fluid rounded shadow-lg" alt="Sobre">
                 </div>
 
-                    <div class="col-md-6">
-                        <h2>Sobre Nós</h2>
-                            <p>Na All Inclusive, pensamos no poder da diversidade. Conectamos pessoas de diferentes origens, gêneros, raças e habilidades com empresas que valorizam a inclusão.</p>
-                            <p>Cada talento é único, e nosso compromisso é construir pontes que promovam ambientes justos e acolhedores. Juntos, criamos um futuro onde respeito, empatia e igualdade guiam todas as oportunidades. </p>
-                            
-                        <a href="#services" class="btn btn-primary mt-4">Nossos Serviços</a>
-                     </div>
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p>Na All Inclusive, pensamos no poder da diversidade. Conectamos pessoas de diferentes origens,
+                        gêneros, raças e habilidades com empresas que valorizam a inclusão.</p>
+                    <p>Cada talento é único, e nosso compromisso é construir pontes que promovam ambientes justos e
+                        acolhedores. Juntos, criamos um futuro onde respeito, empatia e igualdade guiam todas as
+                        oportunidades. </p>
+
+                    <a href="#services" class="btn btn-primary mt-4">Nossos Serviços</a>
+                </div>
 
             </div>
         </div>
 
     </section> <!-- Fim -->
 
-    <!-- Seção de Serviços -->
+    <!-- Serviços -->
     <section id="services" class="services py-5 bg-light">
         <div class="container text-center">
             <h2 class="mb-5">Nossos Serviços</h2>
@@ -108,7 +121,7 @@
         </div>
     </section>
 
-    <!-- Seção Portfólio -->
+    <!-- Portfólio -->
     <section id="portfolio" class="portfolio py-5">
         <div class="container text-center">
             <h2 class="mb-5">Nosso Portfólio</h2>
@@ -146,7 +159,7 @@
         </div>
     </section>
 
-    <!-- Seção de Comentario -->
+    <!-- Comentario -->
     <section id="testimonials" class="py-5 bg-light">
         <div class="container text-center">
             <h2 class="mb-5">O que nossos clientes dizem</h2>
@@ -175,36 +188,37 @@
         </div>
     </section>
 
-<div class="create-account-section">
-    <div class="login-container">
-                 
-        <h2>Criar Conta</h2>
-        <form id="create-account-form">
-            <label for="email">E-mail</label>
-            <div class="input-container">
-                <i class="fas fa-envelope"></i> <!-- Ícone de e-mail -->
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-        
+    <div class="create-account-section">
+        <div class="login-container">
+
+            <h2>Criar Conta</h2>
+            <form id="create-account-form">
+                <label for="email">E-mail</label>
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i> <!-- Ícone de e-mail -->
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
                     <button type="submit">Criar Conta</button>
-            
-      
-        </form>
+
+
+            </form>
             <div id="message"></div>
+        </div>
     </div>
-</div>
 
-       
-<div id="message"></div>
-    
-</div|>
 
-    <!-- Seção de Contato -->
+    <div id="message"></div>
+
+    </div|>
+
+    <!-- Contato -->
     <section id="contact" class="contact py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Fale Conosco</h2>
-                    <p>Entre em contato para saber mais sobre nossos serviços e como podemos ajudar você a alcançar seus objetivos.</p>
+                    <p>Entre em contato para saber mais sobre nossos serviços e como podemos ajudar você a alcançar seus
+                        objetivos.</p>
                     <form>
                         <input type="text" class="form-control mb-3" placeholder="Seu Nome">
                         <input type="email" class="form-control mb-3" placeholder="Seu E-mail">
@@ -215,9 +229,9 @@
                 <div class="col-md-6">
                     <h2>Endereço</h2>
                     <p>Rua Exemplo, 123 - Cidade, Estado</p>
-                     <h2>Telefone</h2>
+                    <h2>Telefone</h2>
                     <p>(55) 99999-9999</p>
-                        <h2>E-mail</h2>
+                    <h2>E-mail</h2>
                     <p>allinclusive@gmail.com</p>
                 </div>
             </div>
@@ -232,13 +246,14 @@
                 <a href="https://pt-br.facebook.com/" class="mx-2"><i class="fab fa-facebook-f"></i></a>
 
                 <a href="https://www.instagram.com/" class="mx-2"><i class="fab fa-instagram"></i></a>
-                
-                <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="mx-2"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="Js/script.js"></script>
 </body>
-</html>
 
+</html>
