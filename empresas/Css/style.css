@@ -205,6 +205,10 @@ nav .nav-link:hover {
     text-align: center; /* Centraliza o texto */
 }
 
+.banner .hero-container button {
+    margin: 5px;
+}
+
 .banner h1 {
     font-size: 3rem; /* Ajuste o tamanho conforme necessário */
     font-family: "Bebas Neue", sans-serif;
