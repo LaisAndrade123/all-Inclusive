@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+
+/* Variáveis das Cores */
+/* TEMA DARK */
+:root, :root[data-theme='dark'] {
+    --cor-linha-site: rgb(78, 78, 78);
+    --cor-fundo-nav: rgba(24, 24, 24, 0.776);
+}
+
+/* TEMA LIGHT */
+:root[data-theme='light'] {
+    --cor-linha-site: rgb(255, 255, 255);
+    --cor-fundo-nav: rgba(57, 57, 57, 0.857);
+}
+
+.header-toggle {
+    min-width: 5%;
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+    float: right;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo-sobre);
+    color: var(--cor-texto-sobre);
+}
+
+/* Nav */
+header {
+    background: var(--cor-fundo-nav);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar {
+    padding: 1rem;
+}
+
+nav .navbar-brand img {
+    height: 26px;
+}
+
+nav .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: #00abce !important;
+}
+
+.login-btn {
+    background-color: #0dcaf0;
+    border: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #007ed7;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    width: 200px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Banner */
+.banner {
+    height: 70vh; /* O banner ocupará 50% da altura da tela */
+    background: url('/img/banner.jpg') no-repeat center center/cover; /* Caminho para a imagem de fundo */
+    position: relative; /* Necessário para o funcionamento do z-index */
+    color: white; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camada preta transparente sobre a imagem */
+.banner::before {
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente com opacidade de 50% */
+    z-index: 0; /* Coloca o fundo atrás do texto */
+}
+
+/* Container que mantém o texto sobre a camada preta */
+.banner .hero-container {
+    position: relative; /* Necessário para que o texto esteja acima da camada preta */
+    z-index: 1; /* Garante que o texto esteja acima do fundo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.banner h1 {
+    font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 1; /* Garante que o título esteja acima da camada preta */
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    z-index: 1; /* Garante que o parágrafo esteja acima */
+    position: relative; /* Para que o z-index funcione */
+    color: #efefef; /* Texto claro */
+}
+
+
+
+
+/* Estilos gerais da seção de empresas */
+.empresa-section {
+    padding: 40px 20px;
+    background-color: #f4f7fc; /* Cor de fundo suave */
+    text-align: center;
+}
+
+/* Título da seção */
+.titulo-section h2 {
+    font-size: 30px;
+    font-family: "Fira Sans", sans-serif;
+    color: #3164a7; /* Cor roxa */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Layout de grid das empresas */
+.empresa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Estilo do card das empresas */
+.empresa-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.empresa-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem da empresa */
+.empresa-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Informações da empresa */
+.empresa-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Título da empresa */
+.empresa-info h3 {
+    font-size: 22px;
+    font-family: "Fira Sans", sans-serif;
+    color: #252529;
+    margin-bottom: 10px;
+}
+
+/* Descrição da empresa */
+.empresa-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.detalhes-btn, .curriculo-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.detalhes-btn {
+    background-color: #424242;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.curriculo-btn {
+    background-color: #3164a7;
+    color: white;
+}
+
+/* Efeito hover nos botões */
+.detalhes-btn:hover {
+    background-color: #2a2a2a;
+}
+
+.curriculo-btn:hover {
+    background-color: #00518b;
+}
+
+/* Estilo do grid para a seção "Mais Empresas" */
+.empresa-grid + .empresa-grid {
+    margin-top: 40px;
+}
+
+
+
+/* Seção de Comentários */
+.comments-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.comments-section h2, .comments-section h3 {
+    color: #333;
+    font-family: "Abel", sans-serif;
+    margin: 15px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #1976D2;
+}
+
+.comment-list {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.comment-list p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#ver-mais-btn {
+    background-color: #3d3d3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#ver-mais-btn:hover {
+    background-color: #222222;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2196F3;
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Inclusive | Empresas </title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/icone.jpeg" type="icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body class="light-mode">
+
+    <!-- Barra de Navegação -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="img/All Inclusive.png" alt="Logo" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#empresas">Empresas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../empresas/cv/curriculo.html">Enviar Currículo</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Modo Claro/Escuro -->
+                <div class="header-toggle">
+                    <i id="toggleTheme" class="bi bi-sun"></i>
+                </div>
+
+                <!-- Perfil do Usuário -->
+                <div class="user-profile">
+                    <img src="img/perfil.jpeg" alt="Perfil" class="profile-pic" onclick="toggleProfileMenu()">
+                    <div class="profile-menu" id="profileMenu">
+                        <p class="user-name">Nome do Usuário <i class="bi bi-pencil" onclick="editUserName()"></i></p>
+                        <p class="user-email">email@exemplo.com</p>
+                        <button class="logout-btn">
+                            <i class="bi bi-box-arrow-right"></i> Sair
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner mt-0 pt-5" id="home">
+        <div class="hero-container">
+            <h1>Encontre a Carreira dos Seus Sonhos</h1>
+            <p>Oportunidades únicas para construir sua trajetória profissional.</p>
+            <div class="job-categories mt-3">
+                <button data-category="vendedor" class="btn btn-primary mx-1">Vendedor</button>
+                <button data-category="caixa" class="btn btn-primary mx-1">Caixa</button>
+                <button data-category="administração" class="btn btn-primary mx-1">Administração</button>
+                <button data-category="todos" class="btn btn-primary mx-1">Todos</button>
+            </div>                     
+        </div>
+    </section>
+    
+    <main>
+        <!-- Seção "Empresas em Destaque" -->
+        <section class="empresas-destaque" id="empresas">
+            <div class="titulo-section">
+                <h2>Empresas em Destaque</h2>
+            </div>
+
+            <!-- Carrossel Empresas em Destaque -->
+            <section class="empresa-grid">
+                <div class="empresa-card" data-category="vendedor">
+                    <img src="img/natura.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Natura</h3>                        
+                    </div>
+                
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/magalu.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Magalu</h3>                        
+                    </div>
+                    
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/Johnson-Johnson.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Johnson</h3>                        
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/hand-talk.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Hand Talk</h3>                        
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Seção "Mais Empresas" -->
+            <div class="mais-empresas">
+                <h2>Mais Empresas</h2>
+            </div>
+
+            <!-- Carrossel Mais Empresas -->
+            <section class="empresa-grid">
+                <div class="empresa-card" data-category="vendedor">
+                    <img src="img/CBRE.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>CBRE</h3>
+                        <p>empresa de serviços imobiliários comerciais</p>
+                        <p><strong>Vagas:</strong> 11 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                         <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/drogasil.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Drogasil</h3>
+                        <p>farmácias.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/Serasa.webp" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Serasa</h3>
+                        <p>Crédito financeiro.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/Citi.webp" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Citi</h3>
+                        <p>Banco global.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/casasbahia.jpg" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Casas Bahia</h3>
+                        <p>Varejo doméstico</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/santander.png" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>Santander</h3>
+                        <p>Banco internacional.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/abbc.png" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>ABBC</h3>
+                        <p>Associação bancária.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+                <div class="empresa-card" data-category="caixa">
+                    <img src="img/gpa.png" alt="Empresa 1">
+                    <div class="empresa-info">
+                        <h3>GPA</h3>
+                        <p>Supermercados varejo.</p>
+                        <p><strong>Vagas:</strong> 12 abertas</p>
+                        <a href="../empresas/cv/curriculo.html" class="detalhes-btn" target="_blank">Conversar</a>
+                        <a href="../empresas/cv/curriculo.html" class="curriculo-btn" target="_blank">Enviar Currículo</a>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+<footer class="footer bg-dark text-light py-4">
+    <div class="container text-center">
+        <p>© 2024 All Inclusive - Todos os Direitos Reservados</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/all1nclusive._?igsh=aWpoZGtsazM0Z3l5" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <!-- Link do WhatsApp -->
+            <a href="https://wa.me/5591999999999" class="mx-2" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <!-- Link do E-mail -->
+            <a href="mailto:allinclusiveoficial@gmail.com
+            " class="mx-2">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

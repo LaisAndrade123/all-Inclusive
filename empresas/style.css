@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*font-family: "Roboto Condensed", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis das Cores */
+/* TEMA DARK */
+:root, :root[data-theme='dark'] {
+    /* Nav */
+    --cor-linha-site: rgb(78, 78, 78);
+    --cor-fundo-nav: rgba(24, 24, 24, 0.776);
+
+    /* Site */
+    --cor-fundo-site:rgb(18, 18, 18);
+    --cor-linha-site:rgb(82, 82, 82);
+
+    /* Empresa em distaque */
+    --cor-titulo-distaque: white;
+    --cor-letra-distaque:rgb(192, 192, 192);
+
+    /* Empresas*/
+    --cor-titulo-empresas:white;
+    --cor-fundo-empresas:rgb(41, 41, 41);
+    --cor-letra-empresas:white;
+    --cor-letra2-empresas:rgb(188, 188, 188);
+
+    /*comentarios*/
+    --cor-fundo-coment:rgb(60, 60, 60);
+
+}
+
+/* TEMA LIGHT */
+:root[data-theme='light'] {
+    --cor-linha-site: rgb(255, 255, 255);
+    --cor-fundo-nav: rgba(57, 57, 57, 0.857);
+
+    --cor-fundo-site:rgb(255, 255, 255);
+    --cor-linha-site:rgb(105, 105, 105);
+
+
+    /* Empresa em distaque */
+    --cor-titulo-distaque: rgb(0, 0, 0);
+    --cor-letra-distaque:rgb(13, 13, 13);
+
+
+     /* Empresas*/
+     --cor-titulo-empresas:rgb(22, 22, 22);
+     --cor-fundo-empresas:rgb(255, 255, 255);
+     --cor-letra-empresas:rgb(18, 18, 18);
+     --cor-letra2-empresas:rgb(56, 56, 56);
+
+     /*comentarios*/
+    --cor-fundo-coment:rgb(255, 255, 255);
+}
+
+.header-toggle {
+    min-width: 5%;
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+    float: right;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo-sobre);
+    color: var(--cor-texto-sobre);
+    background-color: var(--cor-fundo-site);
+}
+
+/* Nav */
+header {
+    background: var(--cor-fundo-nav);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar {
+    padding: 1rem;
+}
+
+nav .navbar-brand img {
+    height: 26px;
+}
+
+nav .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: #00abce !important;
+}
+
+.login-btn {
+    background-color: #0dcaf0;
+    border: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #007ed7;
+}
+
+/* Barra de Pesquisa */
+
+.user-profile {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.profile-menu p {
+    margin: 5px 0;
+}
+
+.user-name {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-name i {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.logout-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn i {
+    margin-right: 8px;
+}
+
+/* Banner */
+.banner {
+    height: 70vh; /* O banner ocupará 50% da altura da tela */
+    background: url(../img/banner3.jpg) no-repeat center center/cover; /* Caminho para a imagem de fundo */
+    position: relative; /* Necessário para o funcionamento do z-index */
+    color: white; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camada preta transparente sobre a imagem */
+.banner::before {
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.609); /* Fundo preto transparente com opacidade de 50% */
+    z-index: 0; /* Coloca o fundo atrás do texto */
+}
+
+/* Container que mantém o texto sobre a camada preta */
+.banner .hero-container {
+    position: relative; /* Necessário para que o texto esteja acima da camada preta */
+    z-index: 1; /* Garante que o texto esteja acima do fundo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.banner h1 {
+    font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 1; /* Garante que o título esteja acima da camada preta */
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    z-index: 1; /* Garante que o parágrafo esteja acima */
+    position: relative; /* Para que o z-index funcione */
+    color: #efefef; /* Texto claro */
+}
+
+
+/* Estilos para Empresas em Destaque */
+.empresa-destaque-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.empresa-destaque-card {
+    text-align: center;
+}
+
+.empresa-img-redonda {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.empresas-destaque,
+.mais-empresas {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.empresas-destaque h2,
+.mais-empresas h2 {
+    font-size: 2rem; /* Tamanho maior para o título */
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* Título de Mais Empresas */
+.titulo-section h2 {
+    font-size: 30px;
+    color: var(--cor-titulo-empresas);
+    margin: 30px 0;
+}
+
+.empresa-destaque-card p {
+    color: var(--cor-letra-distaque);
+}
+
+/* Grade de Empresas */
+.empresa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.empresa-card {
+    background-color: var(--cor-fundo-empresas);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+    border: 1px solid var(--cor-linha-site);
+}
+
+.empresa-card:hover {
+    transform: translateY(-10px);
+}
+
+.empresa-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.empresa-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.mais-empresas h2 {
+    color: var(--cor-titulo-empresas);
+}
+.empresa-info h3 {
+    color: var(--cor-letra-empresas);
+    margin-bottom: 10px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.empresa-info p {
+    color: var(--cor-letra2-empresas);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.detalhes-btn, .curriculo-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.detalhes-btn {
+    background-color: #424242;
+    color: white;
+}
+
+.curriculo-btn {
+    background-color: #3164a7;
+    color: white;
+}
+
+.detalhes-btn:hover {
+    background-color: #2a2a2a;
+}
+
+.curriculo-btn:hover {
+    background-color: #00518b;
+}
+
+
+
+
+/* Rodapé */
+
+.footer {
+    background: linear-gradient(135deg, #111111, #222);
+    color: #ccc;
+}
+
+.footer-logo {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer p, .footer a {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: #00b3ff;
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #00a2ff;
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+/*responsivo*/
+@media (max-width: 1200px){
+	main {
+		padding: 30px 20px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 990px){
+	main {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 800px){
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px){
+	.grid {
+	grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 300px){
+	.grid {
+	grid-template-columns: 1fr;
+	}
+}
+

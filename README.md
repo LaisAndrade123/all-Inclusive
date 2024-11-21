@@ -1,2 +1,2 @@
-# all-inclusive
-Projeto Integrador AFESU
+# all-Inclusive
+Projeto Integrador
